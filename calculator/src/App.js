@@ -5,7 +5,7 @@ function App() {
   const [result, setResult] = useState("");
   const inputRef = useRef(null);
 
-  useEffect(() => inputRef.current.focus());
+  useEffect((e) => inputRef.current.focus());
 
   function handleClick(e) {
     setResult(result.concat(e.target.name));
